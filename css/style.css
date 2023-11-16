@@ -8,12 +8,122 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "Miedo";
+  src: url("/font/piecesnfi-lron-webfont.woff2") format("woff2"), url("/font/piecesnfi-lron-webfont.woff") format("woff");
+
 }
 
 /* ******************************** */
 
 /* Colores */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 /* ******************************** */
+
+body {
+  background: url(/img/smartphone/new\ background1.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timer {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'miedo';
+  height: 100vh;
+
+
+  & .dias,
+  .horas,
+  .minutos,
+  .segundos {
+    /* background-color: green; */
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+
+
+  }
+
+  & h4 {
+    font-size: 80px;
+    background: linear-gradient(180deg, #482323 35.94%, #F00 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #000;
+
+
+  }
+
+  & h5 {
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 1px #000;
+
+  }
+}
+/* 
+.flecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.flecha img {
+  animation: moveUpDown 2s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+
+  0%,
+  100% {
+    transform: translateY(10);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+} */
+
+.halloween{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+  height: 90vh;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Prompt', sans-serif;
+  color: white;
+
+
+  & h5{
+    font-size: 20px;
+    
+    & .click-here{
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.susto{
+  background: url(../img/smartphone/monja.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
